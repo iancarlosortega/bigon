@@ -23,7 +23,33 @@ const { title, description } = Astro.props;
 </html>
 <style is:global>
 	html {
-		font-family: system-ui, sans-serif;
-		background: #ececec;
+		font-family: 'Futura Pt', sans-serif;
+		color: #171717;
+		background-color: #f9f9f9;
+		scrollbar-gutter: stable;
+	}
+
+	@font-face {
+		font-family: 'Futura Pt';
+		src: url('/fonts/futura-pt/FuturaCyrillicBook.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Futura Pt';
+		src: url('/fonts/futura-pt/FuturaCyrillicLight.woff') format('woff');
+		font-weight: 300;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Futura Pt';
+		src: url('/fonts/futura-pt/FuturaCyrillicBold.woff') format('woff');
+		font-weight: 700;
+		font-style: normal;
+		font-display: swap;
 	}
 </style>
